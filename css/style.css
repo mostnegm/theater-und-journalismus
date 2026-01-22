@@ -57,10 +57,20 @@ body {
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.25rem);
     width: 100%;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s;
 }
 
 .nav-link:hover {
-    opacity: 0.7;
+    border-bottom-color: #000;
+}
+
+.nav-link:first-of-type {
+    grid-column: 3;
+}
+
+.nav-link:last-of-type {
+    grid-column: 4;
 }
 
 .logo {
