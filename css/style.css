@@ -56,7 +56,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     text-align: left;
-    color: #000;
+    color: #231F20;
     text-decoration: none;
     font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.25rem);
@@ -72,7 +72,7 @@ body {
     left: 0;
     width: 100%;
     height: 6px;
-    background: radial-gradient(circle, black 60%, transparent 0%);
+    background: radial-gradient(circle, #231F20 60%, transparent 0%);
     background-size: 6px 6px;
     background-repeat: repeat-x;
     opacity: 0;
@@ -136,6 +136,19 @@ body {
     z-index: 20;
 }
 
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(circle, #231F20 70%, transparent 0%);
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    z-index: 20;
+}
+
 .hero-overlay {
     position: absolute;
     top: clamp(2rem, 3vw, 3rem);
@@ -172,15 +185,16 @@ body {
 }
 
 .content-section {
-    background: #000;
+    background: #231F20;
     padding-top: clamp(30px, calc(30px + (60 - 30) * ((100vw - 768px) / (1920 - 768))), 60px);
     padding-bottom: clamp(40px, calc(40px + (80 - 40) * ((100vw - 768px) / (1920 - 768))), 80px);
     position: relative;
 }
+
 .content-section::after {
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: 0;
     width: 100%;
     height: 10px;
@@ -246,13 +260,13 @@ body {
     width: auto;
 }
 
-.content-logos img:first-child {
+.content-logos img:nth-child(3) {
     max-height: 90px;
     margin-top: 15px;
 }
 
 @media (max-width: 640px) {
-    .content-logos img:first-child {
+    .content-logos img:nth-child(3) {
         max-height: 50px;
         margin-top: 30px;
     }
@@ -270,7 +284,7 @@ body {
     margin-top: 60px;
 }
 
-.content-logos img:nth-child(3) {
+.content-logos img:first-child {
     margin-top: 50px;
 }
 
@@ -295,12 +309,20 @@ body {
 
 .video-section .section-title {
     font-family: "neue-haas-grotesk-display", sans-serif;
-    color: #000;
+    color: #231F20;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 400;
     margin: 0 0 0 0;
     text-transform: uppercase;
 }
+
+.video-section .section-text {
+    color: #231F20;
+    grid-column: 1 / -1;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
 
 .section-header {
     grid-column: 1 / -1;
@@ -315,7 +337,7 @@ body {
 }
 
 .video-item:hover {
-    background-color: #000;
+    background-color: #231F20;
 }
 
 
@@ -325,7 +347,7 @@ body {
     line-height: 1.3;
     margin: 0 0 15px 0;
     text-align: left;
-    color: #000;
+    color: #231F20;
     transition: color 0.1s;
 }
 
@@ -363,7 +385,7 @@ body {
 
 .footer {
     width: 100%;
-    background-color: #000;
+    background-color: #231F20;
     color: #fff;
 }
 
@@ -392,13 +414,13 @@ body {
     align-items: center;
 }
 
-.footer-bottom-logos img:first-child {
+.footer-bottom-logos img:nth-child(3) {
     max-height: 90px;
     margin-top: 15px; 
 }
 
 @media (max-width: 640px) {
-    .footer-bottom-logos img:first-child {
+    .footer-bottom-logos img:nth-child(3) {
         max-height: 50px;
         margin-top: 30px; 
     }
@@ -408,7 +430,7 @@ body {
     margin-top: 60px;
 }
 
-.footer-bottom-logos img:nth-child(3) {
+.footer-bottom-logos img:first-child {
     margin-top: 50px;
 }
 

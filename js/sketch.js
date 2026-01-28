@@ -113,9 +113,9 @@ function draw() {
       
       if (brightness < brightnessThreshold) {
         // Blacks
-        pgPixels[i] = 0;
-        pgPixels[i + 1] = 0;
-        pgPixels[i + 2] = 0;
+        pgPixels[i] = 35;
+        pgPixels[i + 1] = 31;
+        pgPixels[i + 2] = 32;
       } else {
         // Whites
         pgPixels[i] = 255;
