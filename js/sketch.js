@@ -10,7 +10,7 @@ let displayHeight;
 let gridSpacing = 8; // Distance between grid points
 
 // Cursor reveal settings
-let cursorRadius = 70;
+let cursorRadius = 100;
 let snappedRadius;
 let mouseXPos = -1000;
 let mouseYPos = -1000;
