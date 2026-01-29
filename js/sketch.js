@@ -23,6 +23,7 @@ function setup() {
   
   // Load main video for effect
   video = createVideo('assets/hero-video.mp4', videoReady);
+  video.volume(0);
   video.hide();
   video.size(processWidth, processHeight);
   
