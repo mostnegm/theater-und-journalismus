@@ -465,6 +465,15 @@ body {
     align-self: start;
 }
 
+.footer-legal a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
 .footer-legal:first-of-type {
     grid-column: 3;
 }
@@ -486,7 +495,8 @@ body {
         grid-column: 1 / -1;
         grid-row: auto;
     }
-    
+
+
     .footer-bottom-logos {
         grid-row: auto;
     }
