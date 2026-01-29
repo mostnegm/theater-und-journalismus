@@ -29,6 +29,7 @@ function setup() {
   
   // Load reveal video
   revealVideo = createVideo('assets/reveal-video.mp4');
+  revealVideo.volume(0);
   revealVideo.hide();
   revealVideo.size(processWidth, processHeight);
   revealVideo.loop();
