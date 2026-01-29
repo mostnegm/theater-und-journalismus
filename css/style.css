@@ -159,6 +159,23 @@ body {
     pointer-events: none;
 }
 
+.hero-static-image {
+    display: none; /* Hidden by default */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    #p5-container {
+        display: none;
+    }
+    
+    .hero-static-image {
+        display: block;
+    }
+}
+
 .hero-title {
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: clamp(2rem, 5vw, 4rem);

@@ -20,6 +20,7 @@
 
     <section class="hero">
         <div id="p5-container"></div>
+        <img src="assets/hero-image.jpg" alt="Hero" class="hero-static-image">
         <div class="hero-overlay">
             <h1 class="hero-title">Vorhang auf am 25.3.2026</h1>
         </div>
@@ -153,8 +154,19 @@
     </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-    <script src="js/sketch.js"></script>
+    <script>
+        // Only load p5.js on desktop (768px+)
+        if (window.innerWidth >= 768) {
+            const script1 = document.createElement('script');
+            script1.src = 'https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js';
+            script1.onload = () => {
+                const script2 = document.createElement('script');
+                script2.src = 'js/sketch.js';
+                document.body.appendChild(script2);
+            };
+            document.body.appendChild(script1);
+        }
+    </script>
 
 
 
