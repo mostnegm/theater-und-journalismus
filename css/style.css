@@ -351,6 +351,8 @@ body {
     margin-bottom: 30px;
     padding: 15px;
     transition: background-color 0.1s;
+    display: flex;
+    flex-direction: column;
 }
 
 .video-item:hover {
@@ -377,6 +379,7 @@ body {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
+    margin-top: auto;
 }
 
 .video-wrapper a {
